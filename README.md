@@ -1,5 +1,18 @@
 [![Build Status](https://travis-ci.com/PayU/mysql-dump-anonymizer.svg?branch=master)](https://travis-ci.com/PayU/mysql-dump-anonymizer)
 
+Use with Docker
+
+`docker-compose build`
+`docker-compose up`
+
+This will result in the container grabbing your `sample/anon.yml` as a config file and `sample/sample.sql` as your input mysql dump.
+
+The anonymized mysql dump will be stored as `sample/anon_result.sql`.
+
+You can swap those files with yours or change the mounted volume and filenames at `Dockerfile` and `docker-compose.yml`
+
+--
+
 Work In Progress
 
 This library handles parsing of a mysql dump file and anonymizing it using data types and rules
