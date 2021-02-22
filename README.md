@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/PayU/mysql-dump-anonymizer.svg?branch=master)](https://travis-ci.com/PayU/mysql-dump-anonymizer)
 
-Use with Docker
+Usage with Docker
 
 `docker-compose build`
 `docker-compose up`
