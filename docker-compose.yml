@@ -1,0 +1,11 @@
+version: '3'
+services:
+  anonymizer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mysql-anonymizer
+    tty: true
+    working_dir: /anonymizer
+    volumes:
+      - ./sample:/anonymizer/sample
